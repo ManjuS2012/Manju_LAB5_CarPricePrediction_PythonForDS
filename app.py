@@ -5,6 +5,7 @@ import pickle
 import numpy as np
 import sklearn
 from sqlalchemy import true
+from markupsafe import escape
 
 #Initialize the flask App
 app=Flask(__name__)

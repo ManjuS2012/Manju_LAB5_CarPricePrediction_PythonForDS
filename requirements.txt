@@ -1,9 +1,9 @@
 click
 colorama
-Flask==1.1.2
+Flask==2.0.3
 gunicorn
 itsdangerous
-Jinja2
+Jinja2==3.1.1
 joblib
 MarkupSafe
 numpy
@@ -15,3 +15,4 @@ scipy
 six
 sklearn
 werkzeug
+sqlalchemy==1.4.39

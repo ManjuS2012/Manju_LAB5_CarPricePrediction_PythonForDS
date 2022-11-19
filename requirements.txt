@@ -14,5 +14,4 @@ scikit-learn
 scipy
 six
 sklearn
-threadpoolctrl
 werkzeug

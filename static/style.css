@@ -1,0 +1,136 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-image: url('homeimage.jpg');
+}
+
+.hero-image{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+	height: 50%;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;	
+}
+
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color:white;
+}
+
+body{
+	background-color: 101,10,20;
+	text-align: center;
+	padding: 0px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#research{
+	font-size: 18px;
+	width: 200px;
+	height: 23px;
+	top: 23px;
+}
+
+#box{
+	border-radius: 60px;
+	border-color: 45px;
+	border-style: solid;
+	text-align: center;
+	background-color: white;
+	font-size: medium;
+	position:absolute;
+	width: 700px;
+	bottom : 9% ;
+	height: 850px;
+	right:30%;
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+}
+
+#fuel{
+	width: 83px;
+	height: 43px;
+	text-align: center;
+	border-radius: 14px;
+	font-size: 20px;
+}
+
+#fuel:hover{
+	background-color: aqua;
+}
+
+#research{
+	width: 150px;
+	height: 43px;
+	text-align: center;
+	border-radius: 14px;
+	font-size: 18px;
+}
+
+#research:hover{
+	background-color: brown;
+}
+
+#resea{
+	width: 99px;
+	height: 43px;
+	text-align: center;
+	border-radius: 14px;
+	font-size: 18px;
+}
+
+#resea:hover{
+	background-color: blanchedalmond;
+}
+
+#sub{
+	background-color: purple;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	width: 180px;
+	color: aquamarine;
+	border-radius: 20px;
+	height: 60px;
+	font-size: 18px;
+	text-align: center;
+	
+}
+
+#sub:hover{
+	background-color: greenyellow ;
+}
+
+#first{
+	border-radius: 14px;
+	height: 25px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#second{
+	border-radius: 14px;
+	height: 25px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#third{
+	border-radius: 14px;
+	height: 25px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#fourth{
+	border-radius: 14px;
+	height: 25px;
+	font-size: 20px;
+	text-align: center;
+}

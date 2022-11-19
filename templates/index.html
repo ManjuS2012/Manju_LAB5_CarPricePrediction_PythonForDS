@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Predict the selling price of cars</title>
+</head>
+
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <img src="../static/logo.jpeg" alt="Car" class="logo" width="400" height="200" />
+      <h1 style="font: size 50px;">Used car price predictor</h1>
+      <br> <br>
+      <h3>{{ prediction_text }}</h3>
+    </div>
+  </div>
+  <div style="color: rgb(0,0,0)">
+    <form action="{{ url_for('predict')}}" method="POST">
+      <h2>Enter car details : </h2>
+      <h3>Age of the car (in Years)</h3>
+      <input id="first" name="Age_of_the_car" type="number">
+      <h3>Present showroom price (In lakhs)</h3> <br> <input id="second" name="Present_Price" required="required">
+      <h3>Kilometers Driven</h3> <br> <input id="third" name="Kms_Driven" required="required">
+      <h3>Owner type (0/1/2)</h3> <br> <input id="fourth" name="Owner" required="required">
+      <h3>Fuel Type</h3> <br> <select name="Fuel_Type" id="fuel" required="required">
+        <option value="0">Petrol</option>
+        <option value="1">Diesel</option>
+        <option value="2">CNG</option>
+      </select>
+      <h3>Seller Type</h3> <br> <select name="Seller_Type" id="resea" required="required">
+        <option value="0">Dealer</option>
+        <option value="1">Individual</option>
+      </select>
+      <h3>Transmission Type</h3> <br> <select name="Transmission" id="research" required="required">
+        <option value="0">Manual car</option>
+        <option value="1">Automatic car</option>
+      </select>
+      <br> <br> <button id="sub" type="submit"> Predict Selling Price</button>
+    </form>
+  </div>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      height: 50%;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(53, 215, 183);
+    }
+
+    body {
+      background-color: 101, 10, 20;
+      text-align: center;
+      padding: 0px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #research {
+      font-size: 18px;
+      width: 200px;
+      height: 23px;
+      top: 23px;
+    }
+
+    #box {
+      border-radius: 60px;
+      border-color: 45px;
+      border-style: solid;
+      text-align: center;
+      background-color: white;
+      font-size: medium;
+      position: absolute;
+      width: 700px;
+      bottom: 9%;
+      height: 850px;
+      right: 30%;
+      padding: 0px;
+      margin: 0px;
+      font-size: 14px;
+    }
+
+    #fuel {
+      width: 83px;
+      height: 43px;
+      text-align: center;
+      border-radius: 14px;
+      font-size: 20px;
+    }
+
+    #fuel:hover {
+      background-color: aqua;
+    }
+
+    #research {
+      width: 150px;
+      height: 43px;
+      text-align: center;
+      border-radius: 14px;
+      font-size: 18px;
+    }
+
+    #research:hover {
+      background-color: brown;
+    }
+
+    #resea {
+      width: 99px;
+      height: 43px;
+      text-align: center;
+      border-radius: 14px;
+      font-size: 18px;
+    }
+
+    #resea:hover {
+      background-color: blanchedalmond;
+    }
+
+    #sub {
+      background-color: purple;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+      width: 180px;
+      color: aquamarine;
+      border-radius: 20px;
+      height: 60px;
+      font-size: 18px;
+      text-align: center;
+
+    }
+
+    #sub:hover {
+      background-color: greenyellow;
+    }
+
+    #first { 
+      border-radius: 14px;
+      height: 25px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    #second {
+      border-radius: 14px;
+      height: 25px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    #third {
+      border-radius: 14px;
+      height: 25px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    #fourth {
+      border-radius: 14px;
+      height: 25px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    /* 0:20:08*/
+  </style>
+</body>
+
+</html>
